@@ -1,6 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Card = ({ book }) => {
+  // const navigate = useNavigate();
+
   return (
     <div className="flex px-3 py-3">
       <div className="max-w-sm rounded overflow-hidden shadow-lg">
@@ -19,15 +22,12 @@ const Card = ({ book }) => {
           <p className="text-gray-700 text-base">{book.authorName}</p>
         </div>
         <div className="px-6 py-4">
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-            #photography
-          </span>
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-            #travel
-          </span>
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
-            #winter
-          </span>
+          <button
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            // onClick={() => navigate("/book")}
+          >
+            <Link to={`/book/${book._id}`}>See More</Link>
+          </button>
         </div>
       </div>
     </div>
