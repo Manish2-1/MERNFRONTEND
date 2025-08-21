@@ -2,6 +2,67 @@ import React from "react";
 import Navbar from "../component/Navbar";
 
 const AddBook = () => {
+  // 1st way
+  // const [bookName,setBookName] = useState('')
+  // const [bookPrice,setBookPrice] = useState('')
+  // const [isbnNumber,setIsbnNumber] = useState(null)
+  // const [authorName,setAuthorName] = useState('')
+  // const [publishedAt,setPublishedAt] = useState('')
+  // const [publication,setPublication] = useState('')
+  // const [image,setImage] = useState(null)
+
+  //  const handleSubmit = async (e)=>{
+  //   e.preventDefault()
+  //   const formData = new FormData() // {}
+  //   formData.append('bookName',bookName)
+  //   formData.append('bookPrice',bookPrice)
+  //   formData.append('isbnNumber',isbnNumber)
+  //   formData.append('authorName',authorName)
+  //   formData.append('publishedAt',publishedAt)
+  //   formData.append('image',image)
+  //   formData.append('publication',publication)
+  //    const response = await axios.post('http://localhost:3000/book',formData)
+  //  }
+
+  // 2nd way
+  // const navigate = useNavigate()
+  // const [data,setData] = useState({
+  //   bookName : '',
+  //   bookPrice : '',
+  //   isbnNumber : null,
+  //   authorName : '',
+  //   publishedAt : '',
+  //   publication : '',
+  // })
+  // const [image,setImage] = useState(null)
+
+  // const handleChange = (e)=>{
+  //   const {name,value} = e.target
+  //   setData({
+  //     ...data,
+  //     [name] : value
+  //   })
+
+  // }
+
+  // const handleSubmit = async (e)=>{
+  //   e.preventDefault()
+  //   const formData = new FormData()
+
+  //   Object.entries(data).forEach(([key,value])=>{
+  //     formData.append(key,value)
+  //   })
+  //   formData.append('image',image)
+
+  //   const response = await axios.post("http://localhost:3000/book",formData)
+  //   if(response.status === 201){
+  //     navigate("/")
+  //   }else{
+  //     alert("Something went wrong")
+  //   }
+
+  // }
+
   return (
     <>
       <Navbar />
