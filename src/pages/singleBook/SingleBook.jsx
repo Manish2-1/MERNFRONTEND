@@ -11,7 +11,7 @@ const SingleBook = () => {
   const fetchBook = async () => {
     try {
       const response = await axios.get(
-        `https://mern-basicnode.onrender.com//book/${id}`
+        `https://mern-basicnode.onrender.com/book/${id}`
       );
       if (response.status === 200) {
         setBook(response.data.data);
@@ -29,7 +29,7 @@ const SingleBook = () => {
 
     try {
       const response = await axios.delete(
-        `https://mern-basicnode.onrender.com//book/${id}`
+        `https://mern-basicnode.onrender.com/book/${id}`
       );
       if (response.status === 200) {
         alert("Book deleted successfully");

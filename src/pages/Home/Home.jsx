@@ -8,7 +8,7 @@ const Home = () => {
 
   const fetchBooks = async () => {
     const response = await axios.get(
-      "https://mern-basicnode.onrender.com//book"
+      "https://mern-basicnode.onrender.com/book"
     );
     if (response.status === 200) {
       setBooks(response.data.data);

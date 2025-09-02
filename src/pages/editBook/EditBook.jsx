@@ -35,7 +35,7 @@ const EditBook = () => {
     formData.append("image", image);
 
     const response = await axios.patch(
-      `https://mern-basicnode.onrender.com//book/${id}`,
+      `https://mern-basicnode.onrender.com/book/${id}`,
       formData
     );
     if (response.status === 200) {
@@ -47,7 +47,7 @@ const EditBook = () => {
 
   const fetchBook = async () => {
     const response = await axios.get(
-      `https://mern-basicnode.onrender.com//${id}`
+      `https://mern-basicnode.onrender.com/${id}`
     );
     if (response.status === 200) {
       setData(response.data.data);
