@@ -28,7 +28,6 @@ const Navbar = () => {
               Add Book
             </button>
           </Link>
-          
         </div>
         <div
           className="items-center justify-between w-full lg:flex lg:w-auto lg:order-1"
