@@ -22,11 +22,9 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="flex flex-wrap justify-evenly my-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 my-10 px-4">
         {books.length > 0 &&
-          books.map((book) => {
-            return <Card key={book._id} book={book} />;
-          })}
+          books.map((book) => <Card key={book._id} book={book} />)}
       </div>
     </>
   );
